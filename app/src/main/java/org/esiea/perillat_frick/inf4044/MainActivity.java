@@ -122,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnNotifyAction(View v){
         NotificationCompat.Builder notif = new NotificationCompat.Builder(this);
-        notif.setContentTitle("Notification");
-        notif.setContentText("Hello World !");
+        notif.setContentTitle(getResources().getText(R.string.notify_text));
+        notif.setContentText(getResources().getText(R.string.hello_world));
         notif.setSmallIcon(R.mipmap.ic_launcher);
 
         NotificationManager notifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

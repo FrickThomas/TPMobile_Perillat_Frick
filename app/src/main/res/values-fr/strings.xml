@@ -4,8 +4,11 @@
     <string name="action_settings">Options</string>
     <string name="hello_world">Salut la Terre!</string>
     <string name="button_text">Clique</string>
+    <string name="menu_toast">Toastez moi</string>
     <string name="button_popup">Alerte</string>
     <string name="close_popup">Fermer</string>
     <string name="notify_text">Notification</string>
     <string name="biers_update">Mis à Jour des Bières</string>
+    <string name="title_activity_seconde">SecondeActivity</string>
+    <string name="PAGE_2">Page 2</string>
 </resources>

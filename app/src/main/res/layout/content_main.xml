@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <TextView android:text="@string/hello_world" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hello_world"
+        android:gravity="center"
+        android:onClick="onTextViewClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        android:id="@+id/btn_hello_world"
+        android:layout_below="@+id/tv_hello_world"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="OnClickAction" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_popup"
+        android:id="@+id/btn_popup"
+        android:layout_alignBottom="@+id/btn_hello_world"
+        android:layout_toRightOf="@+id/btn_hello_world"
+        android:layout_toEndOf="@+id/btn_hello_world"
+        android:onClick="OnPopupAction"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notify_text"
+        android:id="@+id/btn_notify"
+        android:layout_alignBottom="@+id/btn_popup"
+        android:layout_toRightOf="@+id/btn_popup"
+        android:layout_toEndOf="@+id/btn_popup"
+        android:onClick="OnNotifyAction" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Page 2"
+        android:id="@+id/btn_p2"
+        android:layout_marginBottom="57dp"
+        android:onClick="OnP2Action"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_popup" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_biere"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btn_p2"
+        android:layout_below="@+id/btn_hello_world"
+        android:scrollbars="vertical" />
+</RelativeLayout>

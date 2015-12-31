@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">INF4044</string>
+    <string name="action_settings">Options</string>
+    <string name="hello_world">Salut la Terre!</string>
+    <string name="button_text">Clique</string>
+    <string name="button_popup">Alerte</string>
+    <string name="close_popup">Fermer</string>
+    <string name="notify_text">Notification</string>
+    <string name="biers_update">Mis à Jour des Bières</string>
+</resources>
